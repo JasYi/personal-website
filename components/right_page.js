@@ -2,6 +2,10 @@
 
 import "./right_page.css";
 import { useState } from "react";
+import WebAppDevPage from "./webapp/web_app_dev";
+import CivicTechPage from "./civictech/civic_tech_page";
+import DataSciPage from "./datasci/data_sci_page";
+import FoodiePage from "./foodie/foodie_page";
 
 export default function RightDisplay({ toggle }) {
   // keeps track of the state in this component, have to seperate from toggle to give animations time to animate
@@ -17,48 +21,48 @@ export default function RightDisplay({ toggle }) {
   switch (display) {
     case 1:
       return (
-        <h1
+        <div
           className="right-content"
           style={toggle == 1 ? inAnimation : outAnimation}
           onAnimationEnd={() => {
             setDisplay(toggle);
           }}
         >
-          Web/App Developer
-        </h1>
+          <WebAppDevPage />
+        </div>
       );
       break;
     case 2:
       return (
-        <h1
+        <div
           className="right-content"
           style={toggle == 2 ? inAnimation : outAnimation}
           onAnimationEnd={() => setDisplay(toggle)}
         >
-          Civic Tech Enthusiast
-        </h1>
+          <CivicTechPage />
+        </div>
       );
       break;
     case 3:
       return (
-        <h1
+        <div
           className="right-content"
           style={toggle == 3 ? inAnimation : outAnimation}
           onAnimationEnd={() => setDisplay(toggle)}
         >
-          Data Scientist
-        </h1>
+          <DataSciPage />
+        </div>
       );
       break;
     case 4:
       return (
-        <h1
+        <div
           className="right-content"
           style={toggle == 4 ? inAnimation : outAnimation}
           onAnimationEnd={() => setDisplay(toggle)}
         >
-          Foodie
-        </h1>
+          <FoodiePage />
+        </div>
       );
       break;
     default:
@@ -67,9 +71,7 @@ export default function RightDisplay({ toggle }) {
           className="right-content"
           style={toggle < 1 ? inAnimation : outAnimation}
           onAnimationEnd={() => setDisplay(toggle)}
-        >
-          Case0
-        </h1>
+        ></h1>
       );
   }
 }

@@ -69,3 +69,7 @@ content: '';
     transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.section-name:hover{
+    cursor:pointer;
+}

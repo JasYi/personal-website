@@ -23,4 +23,65 @@
 .right-content{
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    
+    /* aligning in center */
+    padding-top: 10em;
+    padding-bottom: 12em;
+}
+
+.description{
+    font-weight: 400;
+}
+
+.subtitle{
+
+}
+
+.project{
+    display: flex;
+    align-items: center;
+
+    vertical-align: middle;
+}
+
+.project-title{
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.description-tag{
+    color: gray;
+    font-size: 0.8em;
+
+    height: fit-content;
+
+    padding: 0.3em;
+
+    margin: 0.2em;
+
+    border: 2px solid gray;
+    border-radius: 10em;
+}
+
+.project-image{
+    max-width: 55%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.image-container{
+    width: 5em;
+    height: 5em;
+}
+
+.project-description{
+    margin-top: 0.2em;
+    color: #333333;
+}
+
+.long-description{
+    font-size: 1.2em;
+    width: 80%;
 }
