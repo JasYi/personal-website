@@ -41,6 +41,7 @@
     float: left;
     display: inline-block;
     position: relative;
+    margin: 5px;
 
     /* font/text */
     font-size: 40px;
@@ -72,4 +73,17 @@ content: '';
 
 .section-name:hover{
     cursor:pointer;
+}
+
+/* mobile */
+@media (max-width: 479px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .right-container{
+        width: 100%;
+    }
 }

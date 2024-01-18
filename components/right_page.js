@@ -12,10 +12,10 @@ export default function RightDisplay({ toggle }) {
   const [display, setDisplay] = useState(toggle);
 
   const inAnimation = {
-    animation: "0.5s ease-out 0s 1 forwards slideInFromRight",
+    animation: "0.8s ease-out 0s 1 forwards slideInFromRight",
   };
   const outAnimation = {
-    animation: "0.5s ease-out 0s 1 forwards slideOutToRight",
+    animation: "0.8s ease-out 0s 1 forwards slideOutToRight",
   };
 
   switch (display) {

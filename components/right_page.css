@@ -85,3 +85,10 @@
     font-size: 1.2em;
     width: 80%;
 }
+
+/* mobile */
+@media (max-width: 479px) {
+    .right-content{
+        padding: 3px;
+    }
+}
