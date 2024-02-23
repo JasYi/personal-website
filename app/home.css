@@ -21,15 +21,15 @@
 
 .main-title{
     /* font/text */
-    font-size: 128px;
+    font-size: 12em;
 
     /* size/location */
-    margin: 3px;
+    margin: 0.03em;
 }
 
 .sub-title{
     /* font/text */
-    font-size: 40px;
+    font-size: 3em;
 
     /* size/location */
     margin: 3px;
@@ -41,10 +41,10 @@
     float: left;
     display: inline-block;
     position: relative;
-    margin: 5px;
+    margin: 0.1em;
 
     /* font/text */
-    font-size: 40px;
+    font-size: 4em;
     text-align: left;
 
     

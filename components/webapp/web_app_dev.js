@@ -1,26 +1,48 @@
 import "../right_page.css";
+import Project from "./project";
+import { React, useEffect, useState } from "react";
 
 export default function WebAppDevPage() {
+  const projects = [
+    {
+      name: "Splitify",
+      tech: ["React", "Flask", "OAuth2.0", "Spotify API"],
+      description: "Splitting your large Spotify playlists into subplaylists",
+      link: "https://splitify-jasyi.vercel.app/",
+      img: "/splitify.png",
+    },
+    {
+      name: "Oyster",
+      tech: ["React", "FastAPI", "MongoDB"],
+      description:
+        "Connecting small businesses to investors | Winner @ Georgetown Hackathon '24",
+      link: "https://devpost.com/software/project-yay-bpqg7y",
+      img: "/oystergif.gif",
+    },
+    {
+      name: "XLR8",
+      tech: ["React", "ElectronJS", "AWS", "FPGAs"],
+      description:
+        "Creating better developer tools for hardware engineers working with FPGAs | Stanford Hackathon '24",
+      link: "https://devpost.com/software/xlr8",
+      img: "/xlr8.jpg",
+    },
+  ];
   return (
     <>
-      <h3 className="description">
-        I love making small projects on random things that I find interesting.
-      </h3>
-      <div className="project">
-        <h2 className="project-title">Splitify</h2>
-        <p className="description-tag">React</p>
-        <p className="description-tag">Flask</p>
-        <p className="description-tag">OAuth2.0</p>
-        <p className="description-tag">Spotify API</p>
-      </div>
-      <div className="img-container">
-        <p className="project-description">
-          Splitting your large Spotify playlists into subplaylists
-        </p>
-        <a href="https://splitify-jasyi.vercel.app/" target="_blank">
-          <img src="/splitify.png" className="project-image" />
-        </a>
-      </div>
+      {projects == [] ? (
+        <h1>Loading...</h1>
+      ) : (
+        <>
+          <h3 className="description">
+            I love making small projects on random things that I find
+            interesting.
+          </h3>
+          <div className="project-container">
+            <Project data={projects} />
+          </div>
+        </>
+      )}
     </>
   );
 }
