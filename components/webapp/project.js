@@ -1,4 +1,5 @@
 import "./project.css";
+import { Card } from "flowbite";
 
 const Project = ({ data }) => {
   console.log(data);
@@ -6,26 +7,31 @@ const Project = ({ data }) => {
   return (
     <>
       {data.map((project) => (
-        <div className="single-project">
-          <div className="project">
-            <h2 className="project-title">{project.name}</h2>
-            <div className="descriptions">
+        <>
+          <a
+            href={project.link}
+            target="_blank"
+            class="m-1 w-[45%] block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {project.name}
+            </h5>
+            <div className="flex flex-wrap">
               {project.tech.map((tech) => (
-                <p className="description-tag">{tech}</p>
+                <span class="border divide-black mt-1 bg-white text-black text-xs font-medium me-2 px-2.5 py-0.5 rounded-md">
+                  {tech}
+                </span>
               ))}
             </div>
-          </div>
-          <div className="image-container">
-            <div className="project-description">
-              <p className="individual-description">{project.description}</p>
-            </div>
-            <div className="images">
-              <a href={project.link} target="_blank">
-                <img src={project.img} className="project-image" />
-              </a>
-            </div>
-          </div>
-        </div>
+            <p class="my-2 font-normal text-gray-700 dark:text-gray-400">
+              {project.description}
+            </p>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src={project.img}
+              alt="image description"
+            />
+          </a>
+        </>
       ))}
     </>
   );

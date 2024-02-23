@@ -34,7 +34,7 @@ export default function WebAppDevPage() {
         <h1>Loading...</h1>
       ) : (
         <>
-          <h3 className="description">
+          <h3 className="text-3xl">
             I love making small projects on random things that I find
             interesting.
           </h3>

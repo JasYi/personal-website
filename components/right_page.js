@@ -22,12 +22,11 @@ export default function RightDisplay({ toggle }) {
     case 1:
       return (
         <div
-          className="right-content"
+          className="right-content pt-32 w-11/12 float-right"
           style={toggle == 1 ? inAnimation : outAnimation}
           onAnimationEnd={() => {
             setDisplay(toggle);
-          }}
-        >
+          }}>
           <WebAppDevPage />
         </div>
       );
@@ -35,10 +34,9 @@ export default function RightDisplay({ toggle }) {
     case 2:
       return (
         <div
-          className="right-content"
+          className="right-content pt-32 w-11/12 float-right"
           style={toggle == 2 ? inAnimation : outAnimation}
-          onAnimationEnd={() => setDisplay(toggle)}
-        >
+          onAnimationEnd={() => setDisplay(toggle)}>
           <CivicTechPage />
         </div>
       );
@@ -46,10 +44,9 @@ export default function RightDisplay({ toggle }) {
     case 3:
       return (
         <div
-          className="right-content"
+          className="right-content pt-32 w-11/12 float-right"
           style={toggle == 3 ? inAnimation : outAnimation}
-          onAnimationEnd={() => setDisplay(toggle)}
-        >
+          onAnimationEnd={() => setDisplay(toggle)}>
           <DataSciPage />
         </div>
       );
@@ -57,10 +54,9 @@ export default function RightDisplay({ toggle }) {
     case 4:
       return (
         <div
-          className="right-content"
+          className="right-content pt-32 w-11/12 float-right"
           style={toggle == 4 ? inAnimation : outAnimation}
-          onAnimationEnd={() => setDisplay(toggle)}
-        >
+          onAnimationEnd={() => setDisplay(toggle)}>
           <FoodiePage />
         </div>
       );
@@ -68,10 +64,9 @@ export default function RightDisplay({ toggle }) {
     default:
       return (
         <h1
-          className="right-content"
+          className="right-content pt-32 w-11/12 mr-4 float-right"
           style={toggle < 1 ? inAnimation : outAnimation}
-          onAnimationEnd={() => setDisplay(toggle)}
-        ></h1>
+          onAnimationEnd={() => setDisplay(toggle)}></h1>
       );
   }
 }

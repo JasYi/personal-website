@@ -3,11 +3,11 @@ import "../right_page.css";
 export default function DataSciPage() {
   return (
     <>
-      <p className="long-description">
+      <h2 class="mb-2 text-3xl font-medium text-black">
         I find the process of working with data extremely rewarding. Previously
         I’ve:
-      </p>
-      <ul className="long-description">
+      </h2>
+      <ul class="text-lg max-w-md space-y-1 text-gray-700 list-disc list-inside">
         <li>Created data science curriculum for 300+ students</li>
         <li>
           Developed a scoring methodology for neighborhoods using text

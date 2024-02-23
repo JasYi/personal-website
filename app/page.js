@@ -1,9 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import "./home.css";
 import { useState } from "react";
 import RightDisplay from "@/components/right_page";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 // const Conditional = (showWhen, children) => {
 //   if (showWhen) return <>{children}</>;
@@ -18,27 +25,41 @@ export default function Home() {
   }
 
   return (
-    <main className="wrapper">
-      <div className="left-container">
-        <h1 className="main-title">Hello,</h1>
-        <h2 className="sub-title">
+    <main className="flex flex-col md:flex-row ">
+      <div className="w-1/2 flex flex-col">
+        <h1 className="text-[10rem] font-bold">Hello,</h1>
+        <h2 className="text-5xl pb-3">
           I'm Jason Yi, a Sophomore at Georgetown and a...
         </h2>
-        <button onClick={() => handleOnClick(1)} className="section-name">
-          Web/App Developer
-        </button>
-        <button onClick={() => handleOnClick(2)} className="section-name">
-          Civic Tech Enthusiast
-        </button>
-        <button onClick={() => handleOnClick(3)} className="section-name">
-          Data Scientist
-        </button>
-        <button onClick={() => handleOnClick(4)} className="section-name">
-          Foodie
-        </button>
+        <div className="flex flex-col">
+          <button
+            onClick={() => handleOnClick(1)}
+            className="text-left text-4xl py-1 w-fit group transition duration-300">
+            Web/App Developer
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+          </button>
+          <button
+            onClick={() => handleOnClick(2)}
+            className="text-left text-4xl py-1 w-fit group transition duration-300">
+            Civic Tech Enthusiast
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+          </button>
+          <button
+            onClick={() => handleOnClick(3)}
+            className="text-left text-4xl py-1 w-fit group transition duration-300">
+            Data Scientist
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+          </button>
+          <button
+            onClick={() => handleOnClick(4)}
+            className="text-left text-4xl py-1 w-fit group transition duration-300">
+            Foodie
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
+          </button>
+        </div>
       </div>
 
-      <div className="right-container">
+      <div className="w-full md:w-1/2">
         <RightDisplay toggle={section} />
       </div>
     </main>

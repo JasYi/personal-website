@@ -23,10 +23,6 @@
 .right-content{
     animation-delay: 0s;
     animation-fill-mode: forwards;
-    
-    /* aligning in center */
-    padding-top: 10em;
-    padding-bottom: 12em;
 }
 
 .description{
