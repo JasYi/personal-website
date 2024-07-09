@@ -5,6 +5,14 @@ import { React, useEffect, useState } from "react";
 export default function WebAppDevPage() {
   const projects = [
     {
+      name: "Filed.ai",
+      tech: ["OCR", "GPT-4", "Flask", "NextJS"],
+      description:
+        "Filling out medical forms using computer vision and LLMs. | Winner @ H2AI Hackathon",
+      link: "https://www.georgetown-h2ai.com/",
+      img: "/filedai.png",
+    },
+    {
       name: "Splitify",
       tech: ["React", "Flask", "OAuth2.0", "Spotify API"],
       description: "Splitting your large Spotify playlists into subplaylists",
