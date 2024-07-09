@@ -21,12 +21,13 @@ const poppins = Poppins({
 export default function Home() {
   const [section, setSection] = useState(0);
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
   useEffect(() => {
+    setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
