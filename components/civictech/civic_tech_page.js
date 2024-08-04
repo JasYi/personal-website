@@ -8,7 +8,7 @@ export default function CivicTechPage() {
         taught me to put users first. As a software engineer intern and first
         employee at{" "}
         <a
-          href="https://www.aidygrants.com/"
+          href="https://www.ycombinator.com/companies/aidy"
           target="_blank"
           className="text-blue-600 hover:underline">
           Aidy (YC W24)
