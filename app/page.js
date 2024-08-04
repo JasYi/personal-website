@@ -59,7 +59,7 @@ export default function Home() {
           <button
             onClick={() => handleOnClick(2)}
             className="text-left text-4xl py-1 w-fit group transition duration-300">
-            Civic Tech Enthusiast
+            User First Engineer
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
           </button>
           <button
