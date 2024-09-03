@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 import RightDisplay from "@/components/right_page";
 import { Poppins } from "next/font/google";
 import { isMobile } from "../utils/deviceDetect";
+// import githubLogo from "/github.svg";
+// import linkedinLogo from "/linkedin.svg";
+// import resumeLogo from "/resume.svg";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -77,9 +80,43 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 mb-20">
         <RightDisplay toggle={section} />
       </div>
+      <footer className="fixed bottom-0 left-0 w-full bg-white text-black py-4">
+        <div className="container mx-auto flex justify-center space-x-4">
+          <a
+            href="https://www.linkedin.com/in/jason-yi1/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src={"/linkedin.svg"}
+              alt="LinkedIn"
+              className="h-8 w-8 hover:opacity-75"
+            />
+          </a>
+          <a
+            href="https://github.com/JasYi"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src={"/github.svg"}
+              alt="GitHub"
+              className="h-8 w-8 hover:opacity-75"
+            />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1IQCXdTYLTs9k4E_yk6Nth39Y-eLAKHCH/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src={"/resume.svg"}
+              alt="Resume"
+              className="h-8 w-8 hover:opacity-75"
+            />
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }
