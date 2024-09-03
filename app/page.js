@@ -47,7 +47,7 @@ export default function Home() {
     <h1>This website is not optimized for mobile, please open on desktop :)</h1>
   ) : (
     <main className="flex flex-col md:flex-row ">
-      <div className="w-1/2 flex flex-col">
+      <div className="w-1/2 flex flex-col pl-4">
         <h1 className="text-[10rem] font-bold">Hello,</h1>
         <h2 className="text-5xl pb-3">
           I'm Jason Yi, a Junior at Georgetown and a...
@@ -106,7 +106,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://drive.google.com/file/d/1IQCXdTYLTs9k4E_yk6Nth39Y-eLAKHCH/view?usp=sharing"
+            href="https://drive.google.com/file/d/13iNIoXq-UbCZPJ24Y1xK8O5Kc1bJU4fn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer">
             <img
