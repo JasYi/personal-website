@@ -60,7 +60,7 @@ export default function WebAppDevPage() {
         <>
           <h3 className="text-3xl">
             I love making small projects on random things that I find
-            interesting.
+            interesting. Click the card to learn more!
           </h3>
           <div className="project-container">
             <Project data={projects} />
