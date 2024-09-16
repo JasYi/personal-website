@@ -5,6 +5,13 @@ import { React, useEffect, useState } from "react";
 export default function WebAppDevPage() {
   const projects = [
     {
+      name: "Formulate",
+      tech: ["React", "Convex", "GPT-4o", "Polaris"],
+      description: "Instantly turn form images into live web forms",
+      link: "https://www.formulate.live",
+      img: "/Formulate_mockup.jpg",
+    },
+    {
       name: "Splitify",
       tech: ["React", "Flask", "OAuth2.0", "Spotify API"],
       description: "Splitting your large Spotify playlists into subplaylists",
