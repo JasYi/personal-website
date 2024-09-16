@@ -7,7 +7,8 @@ export default function WebAppDevPage() {
     {
       name: "Formulate",
       tech: ["React", "Convex", "GPT-4o", "Polaris"],
-      description: "Instantly turn form images into live web forms",
+      description:
+        "Instantly turn form images into live web forms | Hack the North '24",
       link: "https://www.formulate.live",
       img: "/Formulate_mockup.jpg",
     },
