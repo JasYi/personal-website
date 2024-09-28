@@ -8,7 +8,7 @@ export default function WebAppDevPage() {
       name: "TinderDB",
       tech: ["NextJS", "MongoDB", "Groq"],
       description:
-        "Swipe to declutter your databases to reduce your environmental impact!",
+        "Swipe to declutter your databases to reduce your environmental impact! | Honorable Mention @ PennApps '24",
       link: "https://devpost.com/software/tinderdb",
       img: "/tinderdb.png",
     },
