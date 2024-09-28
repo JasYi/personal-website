@@ -106,7 +106,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://drive.google.com/file/d/1dqClxbGN32x-VgyBo5znv6MQ3tGmlMXl/view?usp=sharing"
+            href="https://drive.google.com/file/d/102cllzk-U53OAwKL-Sf7pzAThOC9GuiE/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer">
             <img
