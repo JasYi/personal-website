@@ -5,8 +5,16 @@ import { React, useEffect, useState } from "react";
 export default function WebAppDevPage() {
   const projects = [
     {
+      name: "TinderDB",
+      tech: ["NextJS", "MongoDB", "Groq"],
+      description:
+        "Swipe to declutter your databases to reduce your environmental impact!",
+      link: "https://devpost.com/software/tinderdb",
+      img: "/tinderdb.png",
+    },
+    {
       name: "Formulate",
-      tech: ["React", "Convex", "GPT-4o", "Polaris"],
+      tech: ["React", "Convex", "GPT-4o", "Polaris", "Vercel"],
       description:
         "Instantly turn form images into live web forms | Hack the North '24",
       link: "https://www.formulate.live",

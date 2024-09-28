@@ -65,12 +65,12 @@ export default function Home() {
             User First Engineer
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
           </button>
-          <button
+          {/* <button
             onClick={() => handleOnClick(3)}
             className="text-left text-4xl py-1 w-fit group transition duration-300">
             Data Scientist
             <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
-          </button>
+          </button> */}
           <button
             onClick={() => handleOnClick(4)}
             className="text-left text-4xl py-1 w-fit group transition duration-300">
@@ -106,7 +106,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://drive.google.com/file/d/13iNIoXq-UbCZPJ24Y1xK8O5Kc1bJU4fn/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dqClxbGN32x-VgyBo5znv6MQ3tGmlMXl/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer">
             <img
