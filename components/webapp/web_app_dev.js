@@ -6,7 +6,7 @@ export default function WebAppDevPage() {
   const projects = [
     {
       name: "TinderDB",
-      tech: ["NextJS", "MongoDB", "Groq"],
+      tech: ["NextJS", "Flask", "MongoDB", "Groq"],
       description:
         "Swipe to declutter your databases to reduce your environmental impact! | Honorable Mention @ PennApps '24",
       link: "https://devpost.com/software/tinderdb",
