@@ -44,7 +44,9 @@ export default function Home() {
   }
 
   return isMobile ? (
-    <h1>This website is not optimized for mobile, please open on desktop :)</h1>
+    <h1>
+      This website is not optimized for mobile, please open on desktop :) sorry!
+    </h1>
   ) : (
     <main className="flex flex-col md:flex-row ">
       <div className="w-1/2 flex flex-col pl-4">
