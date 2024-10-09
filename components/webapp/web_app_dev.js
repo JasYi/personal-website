@@ -21,6 +21,14 @@ export default function WebAppDevPage() {
       img: "/Formulate_mockup.jpg",
     },
     {
+      name: "TinyGen",
+      tech: ["FastAPI", "OpenAI", "Vercel"],
+      description:
+        "Given a Github repo link and a prompt, generate a diff that accomplishes the given prompt",
+      link: "https://github.com/JasYi/jason-yi-tinygen",
+      img: "/github.png",
+    },
+    {
       name: "Splitify",
       tech: ["React", "Flask", "OAuth2.0", "Spotify API"],
       description: "Splitting your large Spotify playlists into subplaylists",
